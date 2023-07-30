@@ -29,6 +29,7 @@ const App = () => {
     setUpdateId(id);
   };
 
+  //update task
   const updateTask = () => {
     axios.put(`${baseURL}/update/${updateId}`, { tasks: input }).then((res) => {
       console.log(res.data);
